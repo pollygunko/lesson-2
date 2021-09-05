@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Array Object</h2>
+    <p>Task 4</p>
+
+    <p id="demo"></p>
+
+    <script>
+        //не доделано!!
+        const myJSON =
+            '{ "flag":true, "myPromises": ["sport", "learn"], "element": { "name": "Molecule Man", "age": 29, "secretIdentity": "Dan Jukes", "powers": [ "Radiation resistance", "Turning tiny", "Radiation blast" ] }, "screenshot": null, "elementText": "text", "allElementsText": "text2 const", "counter": 25, "config": "Common", "const": "FiRst", "parameters": [ 1, 2, 3, 4, 5, 6, 7, 8 ], "description": "qwertyu" }';
+        // document.getElementById("demo").innerHTML = istype(fl_type,mypro_type);
+        const myObj = JSON.parse(myJSON);
+        console.log(myObj);
+        fl = myObj.flag;
+        mypro = myObj.myPromises;
+        el = myObj.element;
+        scr = myObj.screenshot;
+        eltxt = myObj.elementText;
+        alleltxt = myObj.allElementText;
+        count = myObj.counter;
+        conf = myObj.config;
+        cnst = myObj.const;
+        par = myObj.parameters;
+        desc = myObj.description;
+
+        /*function isArray(my) {
+            return my.constructor === Array;
+        }*/
+        //console.log(fl);
+        fl_type = typeof fl;
+        mypro_type = typeof mypro;
+        el_type = typeof el;
+        scr_type = typeof scr;
+        eltxt_type = typeof eltxt;
+        alleltxt_type = typeof alleltxt;
+        count_type = typeof count;
+        conf_type = typeof conf;
+        cnst_type = typeof cnst;
+        par_type = typeof par;
+        desc_type = typeof desc;
+        console.log(fl_type, mypro_type, el_type, scr_type, eltxt_type, alleltxt_type, conf_type, conf_type, cnst_type,
+            par_type, desc_type);
+
+      /*  function typebool(a) {
+            if (a == 'boolvean') {
+                console.log("ok");
+                return 1;
+            } else {
+                console.log("not ok");
+                return 0;
+            }
+        };*/
+
+        function typeall(a, b, c, d, e) { // проверка типов
+            if (a == 'boolean' && b == 'object' && c == 'object' && d == 'object' && e == 'string') { //как проверить на массив, а не на объект?
+                console.log("ok");
+                return 1;
+            } else {
+                console.log("not ok");
+                return 0;
+            }
+        };
+       // typebool(fl_type);
+        typeall(fl_type, mypro_type, el_type, scr_type, eltxt_type);
+    </script>
+
+</body>
+
+</html>

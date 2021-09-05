@@ -1,0 +1,36 @@
+{
+    "MyJson": {
+        "flag": true,
+        "myPromises": [
+            "sport",
+            "learn"
+        ],
+        "element": {
+            "name": "Molecule Man",
+            "age": 29,
+            "secretIdentity": "Dan Jukes",
+            "powers": [
+                "Radiation resistance",
+                "Turning tiny",
+                "Radiation blast"
+            ]
+        },
+        "screenshot": null,
+        "elementText": "text",
+        "allElementsText": "text2 const",
+        "counter": 25,
+        "config": "Common",
+        "const": "FiRst",
+        "parameters": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "description": "qwertyu"
+    }
+}
